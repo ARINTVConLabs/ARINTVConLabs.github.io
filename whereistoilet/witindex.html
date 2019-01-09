@@ -3,13 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link href="witcss.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
     <title>화장실 어디야? (베타)</title>
 </head>
 <body>
-    <p>webpage test</p>
-    <form>
-        <input type="button" class="sitebutton-main" value="홈으로 이동하기" onclick="window.location.href='../index.html'"/>
-    </form>
+    <nav class="page-nav">
+        <div id="nav-text">
+            <b>홈</b>
+        </div>
+        <div id="nav-text">
+            <b>소개</b>
+        </div>
+        <div id="nav-text">
+            <b>링크</b>
+        </div>
+    </nav>
+    <div class="page-contents">
+        <p>webpage test</p>
+        <form>
+            <input type="button" class="sitebutton-main" value="홈으로 이동하기" onclick="window.location.href='../index.html'"/>
+        </form>
+    </div>
+
+    <footer class="page-footer">
+        <div id="footer-text">
+            2018 ⓒ Team 코드레인저
+        </div>
+        <div id="footer-text">
+            개인정보취급방침
+        </div>
+        <div id="footer-image">
+            download_icon.png
+        </div>
+    </footer>
 </body>
 </html>

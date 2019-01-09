@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+    background-color: #F9A72C;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.page-contents {
+    height:100%;
+    background-color:#FFFFFF;
+}
+
+.page-nav {
+    width: 98%;
+    height: 8%;
+    background-color: #E09728;
+    margin: auto;
+}
+
+.page-footer {
+    width: 98%;
+    height: 5%;
+}
+
+#footer-text, #footer-image {
+    display: inline-block;
+}
+
+#nav-text {
+    width: 30%;
+    height: 50%;
+    text-align: center;
+    font-size:16pt;
+    color: white;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#nav-text:hover {
+    color: #000000;
+    /*transition-duration: all 2s ease-in-out;*/
+}
