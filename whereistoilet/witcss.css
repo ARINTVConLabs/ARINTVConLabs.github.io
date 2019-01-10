@@ -14,6 +14,7 @@ body, html {
     height: 8%;
     background-color: #E09728;
     margin: auto;
+    
 }
 
 .page-footer {
@@ -25,6 +26,11 @@ body, html {
     display: inline-block;
 }
 
+#googleplay {
+    width: 30%;
+    height: 10%;
+}
+
 #nav-text {
     width: 30%;
     height: 50%;
@@ -32,10 +38,19 @@ body, html {
     font-size:16pt;
     color: white;
     display: inline-block;
-    border: 1px solid black;
 }
 
-#nav-text:hover {
+#content-main-img {
+    width: 100%;
+    height: 100%;
+}
+
+#nav-text-hyper:link, #nav-text-hyper:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#nav-text-hyper:hover {
     color: #000000;
     /*transition-duration: all 2s ease-in-out;*/
 }
