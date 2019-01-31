@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        var tv = new Object(); // 새 객체 만들기
+        tv.color = "white";
+        tv.price = 100000; // 작성한 형태에 따라 방식이 바뀔 수 있음, 주의
+        tv.info = function() {
+            document.write("TV 색상: " + this.color, "<br>"); // this는 tv 객체를 가리킴
+            document.write("TV 가격: " + this.price, "<br>");
+        }
+
+        var car = {
+            color: "black",
+            price: 3500000,
+            info: function() {
+                document.write("CAR 색상: " + this.color, "<br>");
+                document.write("CAR 가격: " + this.price, "<br>");
+            }
+        };
+
+        document.writeln("<h1> 내장객체 호출 </h1>")
+        document.write("<h2>tv 객체 호출</h2>");
+        tv.info();
+        document.write("<h2>car 객체 호출</h2>");
+        car.info();
+        document.writeln("<hr>");
+        document.writeln("<h1> DateTime() 객체 호출 </h1>");
+
+        var today = new Date();
+        var nowMonth = today.getMonth();
+        nowDate = today.getDate();
+        nowDay = today.getDay();
+
+        document.write("<h2>오늘 날짜 정보</h2>");
+        document.write("현재 월: " + nowMonth, "<br>");
+        document.write("현재 일: " + nowDate, "<br>");
+        document.write("현재 요일: " + nowDay, "<br>");
+
+        var spcificDate = new Date(2007, 6, 24);
+        var theMonth = spcificDate.getMonth();
+        theDate = spcificDate.getDay();
+        theDay = spcificDate.getDay();
+
+        document.write("<h2>특정 날짜 정보</h2>");
+        document.write("특정 월: " + theMonth, "<br>");
+        document.write("특정 일: " + theDate, "<br>");
+        document.write("특정 요일: " + theDay, "<br>");
+    </script>
+
+    <title>3-1. 내장 객체 테스트</title>
+</head>
+<body>
+    <hr>
+    <a href="../jspractice.html">선택화면으로 돌아가기</a>
+    <hr>
+</body>
+</html>
