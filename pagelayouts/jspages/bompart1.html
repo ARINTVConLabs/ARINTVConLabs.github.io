@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function popupShow() {
+            window.open("subpopup1.html", "팝업 창", "width=600, height=360, left=50, top=10, scrollbars=no");
+        }
+        function alertShow() {
+            alert("경고창 띄우기");
+        }
+        function promptShow() {
+            prompt("프롴프트창 띄우기", "기본 칸");
+        }
+        function confirmShow() {
+            confirm("확인/취소 창 띄우기");
+        }
+        function popupIntervalShow() {
+            window.open("subpopup2.html", "팝업", "width=600, height=360, left=50 ,top=10, scrollbars=no");
+        }
+        function getCurrentURL() {
+            alert(location.href);
+        }
+        function getUserAgent() {
+            alert(navigator.userAgent);
+        }
+        function getOnLineStatus() {
+            if(navigator.onLine) {
+                alert("인터넷 연결됨");
+            } else {
+                alert("인터넷 연결되지 않음");
+            }
+        }
+    </script>
+    <title>3-3. 브라우저 객체 모델</title>
+</head>
+<body>
+    <h2>BOM(Browser Object Model)</h2>
+    <button onclick="popupShow();">팝업 띄우기</button>
+    <button onclick="alertShow();">경고창 띄우기</button> 
+    <button onclick="promptShow();">프롬프트창 띄우기</button>
+    <button onclick="confirmShow();">확인/취소 창 띄우기</button>
+    <button onclick="popupIntervalShow();">인터벌 실행 창 띄우기</button>
+    <hr>
+    <h3>현재 스크린의 사이즈 구하기</h3>
+    <script>
+        document.write("가로: " + screen.width + "<br>");
+        document.write("세로: " + screen.height + "<br>");
+        document.write("컬러 비트: " + screen.colorDepth + "<br>");
+    </script>
+    <hr>
+    <button onclick="location.reload();">새로 고침</button>
+    <button onclick="getCurrentURL();">현재 URL 경고창 띄우기</button>
+    <button onclick="getUserAgent();">UserAgent 구하기</button>
+    <button onclick="getOnLineStatus();">인터넷 연결 여부</button>
+    <hr>
+    <a href="../jspractice.html">선택화면으로 돌아가기</a>
+    <hr>
+    <footer style="font-size: 10pt">2019 (C) ARINTV Contents Creation Labs</footer>
+</body>
+</html>

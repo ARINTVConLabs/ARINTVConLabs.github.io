@@ -48,9 +48,37 @@
         document.write("특정 월: " + theMonth, "<br>");
         document.write("특정 일: " + theDate, "<br>");
         document.write("특정 요일: " + theDay, "<br>");
+
+        var leftday = new Date();
+        var nowYear = leftday.getFullYear();
+
+        var leftDate = new Date(nowYear, 11, 31);
+        var diffDate = leftDate.getTime() - leftday.getTime();
+
+        var result = Math.ceil(diffDate / (60 * 1000 * 60 * 24));
+        document.write("<hr>")
+        document.write("<h2>연말까지 남은 날짜</h2>");
+        document.write("연말 D-day: " + result + "일 남음");
+
+        var arr = [30, "따르릉", true]; // JavaScript에서는 같은 타입이 아니어도 배열 객체를 만들 수 있다.
+
+        document.write("<hr><h2>배열 객체 저장값 가져오기: 단순 호출</h2>");
+        document.write(arr[0], ",&nbsp;");
+        document.write(arr[1], ",&nbsp;");
+        document.write(arr[2], "<br>");
+
+        document.write("<h2>배열 객체 저장값 가져오기: 반복문</h2>");
+        for(var i = 0; i < arr.length; i++) {
+            document.write(arr[i], ",&nbsp");
+        }
+
+        document.write("<h2>배열 객체 저장값 가져오기: 반복문2</h2>");
+        for(i in arr) {
+            document.write(arr[i], ",&nbsp");
+        }
     </script>
 
-    <title>3-1. 내장 객체 테스트</title>
+    <title>3-2. 내장 객체 테스트</title>
 </head>
 <body>
     <hr>

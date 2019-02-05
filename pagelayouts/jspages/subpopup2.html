@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var addNum = 0;
+        var subNum = 100;
+
+        var auto_1 = setInterval(function() {
+            if(addNum < 100) {
+                addNum++;
+                console.log("addNum: " + addNum);
+            }
+        }, 500);
+
+        var auto_2 = setInterval(function() {
+            if(subNum > 0) {
+                subNum--;
+                console.log("subNum: " + subNum);
+            }
+        }, 500);
+
+        function setDefault() {
+            addNum = 0;
+            subNum = 100;
+        }
+    </script>
+    <title>setInterval 팝업</title>
+</head>
+<body>
+    <h2>일정 시간 간격으로 값 변동 주기</h2>
+    콘솔 패널(F12)로 체크하기<br>
+    <button onclick="clearInterval(auto_1)">증가 정지</button>
+    <button onclick="clearInterval(auto_2)">감소 정지</button>
+    <button onclick="setDefault();">값 초기화</button>
+    <hr>
+    <button onclick="window.close()">창 닫기</button>
+</body>
+</html>
